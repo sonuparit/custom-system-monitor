@@ -64,19 +64,20 @@ Main script responsible for collecting and displaying system metrics.
 - Auto-detects active network interface  
 - Calculates CPU and RAM usage in real time  
 - Tracks upload/download speed using `/sys/class/net`  
-- Fetches total daily data using `vnstat`  
 - Handles **online vs offline modes gracefully**  
 - Outputs formatted text for panel integration  
-- Triggers a **sound alert** when daily **data usage exceeds the defined threshold**
 
 ### 2️⃣ daily_data_alert.sh (now integrated into monitor.sh)
 
 A background alert system for monitoring daily data usage.
 
-Key features: - Checks total daily data usage via `vnstat` - Converts
-units (GB → MB) safely - Triggers notification when usage exceeds limit
-(default: 1000 MB) - Plays alert sound using `paplay` - Prevents
-duplicate alerts using a flag file
+**Key Features:**
+
+- Checks total daily data usage via `vnstat`
+- Converts units (GB → MB) safely
+- Triggers notification when usage exceeds limit (default: 1000 MB)
+- Triggers a **sound alert** using `paplay` when daily **data usage exceeds the defined threshold**
+- Prevents duplicate alerts using a flag file
 
 ### Updated version:
 - All in one single script
