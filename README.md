@@ -60,6 +60,7 @@ Main script responsible for collecting and displaying system metrics.
 ![alt text](./screenshots/Screen8.png)
 
 **Key Features:**
+
 - Auto-detects active network interface  
 - Calculates CPU and RAM usage in real time  
 - Tracks upload/download speed using `/sys/class/net`  
