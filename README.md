@@ -149,7 +149,8 @@ chmod 700 monitor.sh
 
 - Set update interval to 3 seconds (recommended for stability and low system load)
 
-![Note] Avoid setting the update interval to 1 second — it can cause high CPU usage and may freeze the system.
+> [!NOTE]
+> Avoid setting the update interval to 1 second — it can cause high CPU usage and may freeze the system.
 
 **If you still want near real-time updates, you’ll need to adjust the script.**
 
